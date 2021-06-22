@@ -33,24 +33,13 @@ body {
         margin: 0 15px 0 5px;
     }
 
-    li > ul {
-        margin-top: 25px;
-        position: absolute;
-        display: none;
-    }
-
-    li:hover ul {
-        display: block;
-        color: $color-header;
-    }
-
     a {
         text-decoration: none;
         color: $color-header;
     }
 }
 
-#tituloPrincipal {
+#titulo-principal {
     font-family: $fuente;
     font-weight: $estilo-fuente;
     font-size: $tamanio-fuente/2.5;
@@ -81,7 +70,7 @@ body {
         font-size: $tamanio-fuente/7.5;
         margin: 10px 30px 30px 30px;
     }
-    &--proyectoImagen {
+    &--proyecto-imagen {
         grid-column: 1;
         grid-row: 2;
         margin-top: 30px;
@@ -90,7 +79,7 @@ body {
         margin-left: 20px;
         border-radius: $radius-mediano;
     }
-    &--proyectoImagen:hover {
+    &--proyecto-imagen:hover {
         max-height: 550px;
         max-width: 500px;
         border-radius: $radius-pequenio;
@@ -99,19 +88,19 @@ body {
     }
 }
 
-.proyectoImagen {
+.proyecto-imagen {
     height: 300px;
-    width: 350px;
+    width: 400px;
     border-radius: $radius-pequenio;
     display: flex;
     flex-direction: row;
     justify-content: center;
     transition: all 2s;
-    margin-left: 40px;
+    margin-left: 20px;
 }
-.proyectoImagen:hover {
-    height: 350px;
-    width: 400px;
+.proyecto-imagen:hover {
+    height: 320px;
+    width: 420px;
 }
 
 .subtitulo {
@@ -138,9 +127,13 @@ body {
     text-align: center;
     margin: 50px 0px 50px 0px;
 }
-video {
-    margin: 10px 15px 40px 300px;
+
+section .video {
+    width: 650px;
+    height: 550px;
+    margin-left: 400px;
 }
+
 .subtitulo-proyecto {
     font-family: $fuente;
     font-weight: $estilo-fuente;
@@ -159,7 +152,7 @@ video {
         font-size: $tamanio-fuente/5;
         font-family: $fuente;
     }
-    .proyectoTitulo {
+    .proyecto-titulo {
         margin: 5px 0 20px 0;
         display: flex;
         justify-content: center;
@@ -203,7 +196,7 @@ button:hover {
     box-shadow: none !important;
 }
 
-.parrafoProyecto {
+.parrafo-proyecto {
     color: $color-subtitulo;
     font-family: $fuente;
     font-size: $tamanio-fuente/7.5;
@@ -220,7 +213,7 @@ button:hover {
     margin: 10px 0 30px 30px;
 }
 
-.verMas {
+.ver-mas {
     text-align: center;
     margin: 5px 0px 30px 0;
 
@@ -285,6 +278,7 @@ table {
     flex-wrap: nowrap;
     align-items: center;
     margin-top: 30px;
+    margin-right: 0;
 }
 
 .form-label {
@@ -422,7 +416,7 @@ table {
 .footer {
     display: flex;
     flex-direction: column;
-    padding: $padding/2;
+    padding: $padding/8;
     position: static;
     margin-top: 50px;
 
@@ -431,7 +425,6 @@ table {
         flex-direction: row;
         justify-content: center;
     }
-
     // Aplicando each
 
     @each $icono in instagram, linkedin, whatsapp {
@@ -441,7 +434,6 @@ table {
             height: 70px;
         }
     }
-
     h5 {
         color: $color-claro;
         font-family: $fuente;
@@ -464,12 +456,12 @@ table {
         }
     }
 
-    #tituloPrincipal {
+    #titulo-principal {
         margin-top: 100px;
     }
 
-    video {
-        margin: 50px 0px 50px 250px;
+    section .video {
+        margin-left: 300px;
         @include sizes(500px, 300px);
     }
     .parrafo {
@@ -495,27 +487,27 @@ table {
         margin-top: 100px;
     }
 
-    .contenido1 {
+    .contenido-1 {
         display: grid;
         grid-template-rows: 1;
     }
 
-    .contenido2 {
+    .contenido-2 {
         display: grid;
         grid-row: 2;
     }
 
-    .contenido3 {
+    .contenido-3 {
         display: grid;
         grid-row: 3;
     }
 
-    .proyectoImagen {
+    .proyecto-imagen {
         margin-top: 10px;
         grid-column: 1;
     }
 
-    .parrafoProyecto {
+    .parrafo-proyecto {
         grid-column: 2;
         display: flex;
         align-items: center;
@@ -530,7 +522,7 @@ table {
         margin: 0 10px 220px 200px;
     }
 
-    .verMas {
+    .ver-mas {
         margin-top: 0px;
         margin-bottom: 20px;
         font-size: $tamanio-fuente/6;
@@ -538,10 +530,22 @@ table {
 
     .educacion__subtitulo {
         margin-top: 100px;
+        margin-bottom: 100px;
     }
-
     .educacion--tabla {
-        margin: 100px 0 300px 0;
+        margin: 100px 0 150px 100px;
+
+        th {
+            font-size: $tamanio-fuente/4.5;
+        }
+
+        li {
+            font-size: $tamanio-fuente/5;
+        }
+
+        td {
+            font-size: $tamanio-fuente/5;
+        }
     }
 
     .row {
@@ -560,10 +564,13 @@ table {
     }
 
     .footer {
-        margin-top: 115px;
+        margin-top: 160px;
 
         h5 {
-            font-size: $tamanio-fuente/7.5;
+            font-size: $tamanio-fuente/6;
+        }
+        .social-icons {
+            margin-top: 20px;
         }
     }
 }
@@ -582,7 +589,7 @@ table {
         }
     }
 
-    #tituloPrincipal {
+    #titulo-principal {
         font-size: 350%;
     }
 
@@ -602,7 +609,7 @@ table {
             margin-bottom: 50px;
         }
 
-        &--proyectoImagen {
+        &--proyecto-imagen {
             max-height: 200px;
             max-width: 250px;
             transition: none;
@@ -610,7 +617,7 @@ table {
         }
     }
 
-    video {
+    section .video {
         margin: 0 0 0 100px;
         @include sizes(400px, 300px);
     }
@@ -627,22 +634,22 @@ table {
         align-items: center;
     }
 
-    .contenido1 {
+    .contenido-1 {
         display: grid;
         grid-template-rows: 1;
     }
 
-    .contenido2 {
+    .contenido-2 {
         display: grid;
         grid-row: 2;
     }
 
-    .contenido3 {
+    .contenido-3 {
         display: grid;
         grid-row: 3;
     }
 
-    .proyectoImagen {
+    .proyecto-imagen {
         margin-top: 10px;
         margin-left: 10px;
     }
@@ -655,7 +662,7 @@ table {
         margin: 0 10px 220px 200px;
     }
 
-    .parrafoProyecto {
+    .parrafo-proyecto {
         display: grid;
         font-size: $tamanio-fuente/7.5;
         grid-column: 2;
@@ -663,7 +670,7 @@ table {
         margin-top: 10px;
         align-items: flex-start;
     }
-    .verMas {
+    .ver-mas {
         display: grid;
         grid-column: 2;
         display: flex;
@@ -681,12 +688,30 @@ table {
 
     .educacion--tabla {
         margin: 0;
+
+        th {
+            font-size: $tamanio-fuente/5;
+        }
+
+        li {
+            font-size: $tamanio-fuente/6;
+        }
+
+        td {
+            font-size: $tamanio-fuente/6;
+        }
     }
 
     .row {
-        margin-left: 0;
-        margin-bottom: 10px;
-        margin-top: 5px;
+        margin: 5px 0 10px 0;
+    }
+    .form-control {
+        width: 95%;
+    }
+    .input-group
+        > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+        width: 88%;
+        flex: 0 1 auto !important;
     }
 
     .form-label {
@@ -698,7 +723,7 @@ table {
     }
 
     .footer {
-        margin-top: 0;
+        margin-top: 50px;
 
         h5 {
             font-size: $tamanio-fuente/10;
@@ -719,7 +744,7 @@ table {
         }
     }
 
-    #tituloPrincipal {
+    #titulo-principal {
         margin-top: 50px;
     }
     .parrafo {
@@ -737,7 +762,7 @@ table {
             font-size: 12px;
             margin: 0 15px 50px 0;
         }
-        &--proyectoImagen {
+        &--proyecto-imagen {
             max-height: 170px;
             max-width: 220px;
             transition: none;
@@ -745,7 +770,7 @@ table {
         }
     }
 
-    video {
+    section .video {
         margin: 0px 0px 0px 100px;
         @include sizes(300px, 200px);
     }
@@ -759,11 +784,11 @@ table {
         flex-direction: column;
         align-items: center;
 
-        .proyectoImagen {
+        .proyecto-imagen {
             @include sizes(100%, 100%);
         }
 
-        .parrafoProyecto {
+        .parrafo-proyecto {
             font-size: 18px;
             margin-left: 15px;
         }
@@ -781,7 +806,7 @@ table {
         }
     }
 
-    .verMas {
+    .ver-mas {
         margin-bottom: 20px;
         display: flex;
         flex-direction: column;
@@ -798,18 +823,19 @@ table {
         margin-top: 25px;
         margin-bottom: 0;
     }
+
     .educacion--tabla {
         margin-bottom: 10px;
         margin-top: 20px;
 
         th {
-            font-size: $tamanio-fuente/7.5;
+            font-size: $tamanio-fuente/7;
         }
-        tr {
-            font-size: $tamanio-fuente/10;
+        td {
+            font-size: $tamanio-fuente/8.5;
         }
         li {
-            font-size: $tamanio-fuente/10;
+            font-size: $tamanio-fuente/8.5;
         }
     }
 

@@ -25,7 +25,7 @@ body {
         margin-top: 0px;
         font-family: $fuente;
         font-weight: $estilo-fuente;
-        font-size: $tamanio-fuente/10;
+        font-size: $tamanio-fuente/160;
     }
 
     li {
@@ -42,7 +42,7 @@ body {
 #titulo-principal {
     font-family: $fuente;
     font-weight: $estilo-fuente;
-    font-size: $tamanio-fuente/2.5;
+    font-size: $tamanio-fuente/40;
     color: $color-titulo;
     text-align: center;
     margin-top: 50px;
@@ -54,7 +54,7 @@ body {
 
     &__subtitulo {
         grid-column: 1;
-        font-size: $tamanio-fuente/2.5;
+        font-size: $tamanio-fuente/40;
         font-family: $fuente;
         font-weight: $estilo-fuente;
         color: $color-titulo;
@@ -67,7 +67,7 @@ body {
         color: $color-rosa;
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
-        font-size: $tamanio-fuente/7.5;
+        font-size: $tamanio-fuente/100;
         margin: 10px 30px 30px 30px;
     }
     &--proyecto-imagen {
@@ -106,7 +106,7 @@ body {
 .subtitulo {
     font-family: $fuente;
     font-weight: $estilo-fuente;
-    font-size: $tamanio-fuente/3;
+    font-size: $tamanio-fuente/51.2;
     color: $color-titulo;
     text-align: center;
     margin: 50px 0px 50px 0px;
@@ -149,7 +149,7 @@ section .video {
 
     .proyectos-seccion {
         color: $color-subtitulo;
-        font-size: $tamanio-fuente/5;
+        font-size: $tamanio-fuente/85;
         font-family: $fuente;
     }
     .proyecto-titulo {
@@ -199,7 +199,7 @@ button:hover {
 .parrafo-proyecto {
     color: $color-subtitulo;
     font-family: $fuente;
-    font-size: $tamanio-fuente/7.5;
+    font-size: $tamanio-fuente/100;
     margin: 15px 10px 5px 50px;
     display: flex;
     justify-content: center;
@@ -209,7 +209,7 @@ button:hover {
     color: $color-rosa;
     font-family: $fuente;
     text-align: center;
-    font-size: $tamanio-fuente/7.5;
+    font-size: $tamanio-fuente/100;
     margin: 10px 0 30px 30px;
 }
 
@@ -248,7 +248,7 @@ table {
         font-family: $fuente;
         font-weight: $estilo-fuente;
         color: $color-header;
-        font-size: $tamanio-fuente/6;
+        font-size: $tamanio-fuente/102;
         background: $color-subtitulo;
         border-radius: $radius-pequenio;
         padding: $padding/20;
@@ -259,7 +259,7 @@ table {
         font-weight: $estilo-fuente;
         color: $color-tabla;
         text-align: center;
-        font-size: $tamanio-fuente/7.5;
+        font-size: $tamanio-fuente/100;
     }
 
     tr {
@@ -267,7 +267,7 @@ table {
         font-weight: $estilo-fuente;
         color: $color-tabla;
         text-align: center;
-        font-size: $tamanio-fuente/7.5;
+        font-size: $tamanio-fuente/100;
     }
 }
 
@@ -282,7 +282,7 @@ table {
 }
 
 .form-label {
-    font-size: $tamanio-fuente/6;
+    font-size: $tamanio-fuente/102;
     font-family: $fuente;
     color: #e9e2d1;
     margin: 0 15px 0 0;
@@ -297,7 +297,7 @@ table {
     outline: none !important;
     border-radius: $radius-grande;
     color: $color-claro !important;
-    font-size: $tamanio-fuente/7.5;
+    font-size: $tamanio-fuente/100;
     font-family: $fuente;
 }
 
@@ -314,7 +314,7 @@ table {
     display: flex;
     justify-content: center;
     margin-top: 0;
-    font-size: $tamanio-fuente/10;
+    font-size: $tamanio-fuente/171;
 }
 
 .dropdown .btn:hover {
@@ -326,7 +326,7 @@ table {
 }
 
 .btn {
-    font-size: $tamanio-fuente/6;
+    font-size: $tamanio-fuente/102;
     font-weight: $estilo-fuente;
 }
 
@@ -363,7 +363,7 @@ table {
     width: 450px;
     outline: none;
     color: $color-claro;
-    font-size: $tamanio-fuente/7.5;
+    font-size: $tamanio-fuente/100;
     font-family: $fuente;
 }
 .col-md-3 input:hover {
@@ -395,7 +395,7 @@ table {
         width: 300px;
         outline: none;
         color: $color-claro;
-        font-size: $tamanio-fuente/7.5;
+        font-size: $tamanio-fuente/100;
         font-family: $fuente;
         display: flex;
         justify-content: center;
@@ -443,15 +443,15 @@ table {
     }
 }
 
-.contenedor-404{
+.contenedor-404 {
     background: linear-gradient(#0a1213, #9f5069);
     color: white;
     padding: 150px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-} 
-.texto{
+}
+.texto {
     font-family: $fuente;
     font-size: 10rem;
     margin-bottom: 0;
@@ -459,13 +459,13 @@ table {
     flex-direction: row;
     justify-content: center;
 }
-.titulo--texto{
+.titulo--texto {
     font-family: $fuente;
     font-size: 2rem;
-    margin-top: 0; 
+    margin-top: 0;
     display: flex;
     flex-direction: row;
-    justify-content: center;  
+    justify-content: center;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -475,7 +475,7 @@ table {
         }
 
         a {
-            font-size: $tamanio-fuente/7.5;
+            font-size: $tamanio-fuente/100;
         }
     }
 
@@ -488,7 +488,7 @@ table {
         @include sizes(500px, 300px);
     }
     .parrafo {
-        font-size: $tamanio-fuente/6;
+        font-size: $tamanio-fuente/102;
         margin-left: 0;
     }
     .subtitulo {
@@ -534,7 +534,7 @@ table {
         grid-column: 2;
         display: flex;
         align-items: center;
-        font-size: $tamanio-fuente/5;
+        font-size: $tamanio-fuente/85;
     }
 
     .carousel-control-prev {
@@ -548,7 +548,7 @@ table {
     .ver-mas {
         margin-top: 0px;
         margin-bottom: 20px;
-        font-size: $tamanio-fuente/6;
+        font-size: $tamanio-fuente/102;
     }
 
     .educacion__subtitulo {
@@ -559,15 +559,15 @@ table {
         margin: 100px 0 150px 100px;
 
         th {
-            font-size: $tamanio-fuente/4.5;
+            font-size: $tamanio-fuente/76.8;
         }
 
         li {
-            font-size: $tamanio-fuente/5;
+            font-size: $tamanio-fuente/85;
         }
 
         td {
-            font-size: $tamanio-fuente/5;
+            font-size: $tamanio-fuente/85;
         }
     }
 
@@ -590,7 +590,7 @@ table {
         margin-top: 160px;
 
         h5 {
-            font-size: $tamanio-fuente/6;
+            font-size: $tamanio-fuente/102;
         }
         .social-icons {
             margin-top: 20px;
@@ -608,7 +608,7 @@ table {
         }
 
         a {
-            font-size: $tamanio-fuente/10;
+            font-size: $tamanio-fuente/171;
         }
     }
 
@@ -628,7 +628,7 @@ table {
 
         &__parrafo {
             margin: 0;
-            font-size: $tamanio-fuente/10;
+            font-size: $tamanio-fuente/171;
             margin-bottom: 50px;
         }
 
@@ -687,7 +687,7 @@ table {
 
     .parrafo-proyecto {
         display: grid;
-        font-size: $tamanio-fuente/7.5;
+        font-size: $tamanio-fuente/100;
         grid-column: 2;
         margin-left: 5px;
         margin-top: 10px;
@@ -701,7 +701,7 @@ table {
         margin: 0px 0px 10px 5px;
         font-size: 100%;
         a {
-            font-size: $tamanio-fuente/7.5;
+            font-size: $tamanio-fuente/100;
         }
     }
 
@@ -713,15 +713,15 @@ table {
         margin: 0;
 
         th {
-            font-size: $tamanio-fuente/5;
+            font-size: $tamanio-fuente/85;
         }
 
         li {
-            font-size: $tamanio-fuente/6;
+            font-size: $tamanio-fuente/102;
         }
 
         td {
-            font-size: $tamanio-fuente/6;
+            font-size: $tamanio-fuente/102;
         }
     }
 
@@ -738,7 +738,7 @@ table {
     }
 
     .form-label {
-        font-size: $tamanio-fuente/7.5;
+        font-size: $tamanio-fuente/100;
     }
 
     button {
@@ -749,11 +749,8 @@ table {
         margin-top: 50px;
 
         h5 {
-            font-size: $tamanio-fuente/10;
+            font-size: $tamanio-fuente/171;
         }
-    }
-    .texto{
-
     }
 }
 
@@ -763,7 +760,7 @@ table {
     }
     .cabecera {
         a {
-            font-size: $tamanio-fuente/10;
+            font-size: $tamanio-fuente/171;
         }
         nav {
             margin-left: 0px;
@@ -774,7 +771,7 @@ table {
         margin-top: 50px;
     }
     .parrafo {
-        font-size: $tamanio-fuente/10;
+        font-size: $tamanio-fuente/171;
         margin: 15px 0 10px 0;
     }
     .yo {
@@ -855,13 +852,13 @@ table {
         margin-top: 20px;
 
         th {
-            font-size: $tamanio-fuente/7;
+            font-size: $tamanio-fuente/120;
         }
         td {
-            font-size: $tamanio-fuente/8.5;
+            font-size: $tamanio-fuente/145;
         }
         li {
-            font-size: $tamanio-fuente/8.5;
+            font-size: $tamanio-fuente/145;
         }
     }
 
@@ -875,7 +872,7 @@ table {
         margin: 5px 0 10px 0;
     }
     .form-label {
-        font-size: $tamanio-fuente/7.5;
+        font-size: $tamanio-fuente/100;
     }
     button {
         margin-bottom: 15px;
@@ -884,10 +881,135 @@ table {
         margin-top: 0;
 
         &--contacto {
-            font-size: $tamanio-fuente/10;
+            font-size: $tamanio-fuente/171;
         }
         &--social {
-            font-size: $tamanio-fuente/10;
+            font-size: $tamanio-fuente/171;
+        }
+    }
+}
+@media only screen and (width: 320px) {
+    .video {
+        margin-left: 15px !important;
+        @include sizes(300px, 200px);
+    }
+
+    #titulo-principal {
+        font-size: $tamanio-fuente/50;
+    }
+
+    .subtitulo {
+        margin-bottom: 0;
+        font-size: $tamanio-fuente/65;
+    }
+    .yo {
+        &__subtitulo {
+            font-size: $tamanio-fuente/50;
+            height: 0;
+        }
+        &--proyecto-imagen {
+            margin-left: 5px;
+            margin-top: 90px;
+        }
+        &__parrafo {
+            font-size: 10px;
+            margin: 90px 5px 5px 5px;
+        }
+    }
+
+    .parrafo {
+        font-size: $tamanio-fuente/171 !important;
+    }
+
+    .proyectos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 0;
+
+        .proyecto-titulo {
+            font-size: $tamanio-fuente/85;
+        }
+
+        .proyecto-imagen {
+            @include sizes(95%, 75%);
+        }
+
+        .parrafo-proyecto {
+            font-size: $tamanio-fuente/181;
+        }
+    }
+    .parrafo-proyecto {
+        font-size: $tamanio-fuente/181;
+    }
+
+    .ver-mas a {
+        font-size: $tamanio-fuente/181;
+        margin-top: 5px;
+    }
+
+    .educacion__subtitulo {
+        font-size: $tamanio-fuente/65;
+    }
+
+    .educacion--tabla {
+        margin-bottom: 10px;
+        margin-top: 20px;
+
+        ul {
+            margin: 0;
+        }
+
+        th {
+            font-size: $tamanio-fuente/171;
+        }
+        td {
+            font-size: $tamanio-fuente/190;
+        }
+        li {
+            font-size: $tamanio-fuente/190;
+        }
+    }
+
+    .contacto--subtitulo {
+        font-size: $tamanio-fuente/65;
+        margin-top: 25px;
+        margin-bottom: 0;
+    }
+    .form-label {
+        font-size: $tamanio-fuente/170;
+    }
+    .col-md-4 input {
+        font-size: $tamanio-fuente/172;
+    }
+    .input-group
+        > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+        width: 82%;
+        flex: 0 1 auto !important;
+    }
+    .btn-secondary {
+        font-size: $tamanio-fuente/172;
+    }
+    .col-md-3 input {
+        width: 290px;
+        font-size: $tamanio-fuente/172;
+    }
+
+    .contacto--boton button {
+        margin-bottom: 5px;
+        font-size: $tamanio-fuente/172;
+    }
+    footer {
+        margin-top: 90px !important;
+        padding: 0 !important;
+
+        &--contacto {
+            margin-bottom: 5px !important;
+            font-size: $tamanio-fuente/171;
+        }
+        .social-icons {
+            margin-top: 5px !important;
         }
     }
 }

@@ -583,7 +583,7 @@ table {
   .footer h5 {
     font-size: 0.93567rem; } }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 480px) {
   .cabecera a {
     font-size: 0.93567rem; }
   .cabecera nav {

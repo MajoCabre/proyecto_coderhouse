@@ -416,84 +416,7 @@ table {
   flex-direction: row;
   justify-content: center; }
 
-@media only screen and (max-width: 1024px) {
-  .cabecera nav {
-    margin-left: 400px; }
-  .cabecera a {
-    font-size: 1.6rem; }
-  #titulo-principal {
-    margin-top: 100px; }
-  section .video {
-    margin-left: 300px;
-    width: 500px;
-    height: 300px; }
-  .parrafo {
-    font-size: 1.56863rem;
-    margin-left: 0; }
-  .subtitulo {
-    margin-top: 100px;
-    margin-bottom: 100px; }
-  .subtitulo h2 {
-    margin: 0 30px 0px; }
-  /*Aplicando Grids*/
-  .proyectos {
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: 2, 1fr;
-    align-items: center;
-    margin-bottom: 100px;
-    margin-top: 100px; }
-  .contenido-1 {
-    display: grid;
-    grid-template-rows: 1; }
-  .contenido-2 {
-    display: grid;
-    grid-row: 2; }
-  .contenido-3 {
-    display: grid;
-    grid-row: 3; }
-  .proyecto-imagen {
-    margin-top: 10px;
-    grid-column: 1; }
-  .parrafo-proyecto {
-    grid-column: 2;
-    display: flex;
-    align-items: center;
-    font-size: 1.88235rem; }
-  .carousel-control-prev {
-    margin: 0 100px 220px 200px; }
-  .carousel-control-next {
-    margin: 0 10px 220px 200px; }
-  .ver-mas {
-    margin-top: 0px;
-    margin-bottom: 20px;
-    font-size: 1.56863rem; }
-  .educacion__subtitulo {
-    margin-top: 100px;
-    margin-bottom: 100px; }
-  .educacion--tabla {
-    margin: 100px 0 150px 100px; }
-    .educacion--tabla th {
-      font-size: 2.08333rem; }
-    .educacion--tabla li {
-      font-size: 1.88235rem; }
-    .educacion--tabla td {
-      font-size: 1.88235rem; }
-  .row {
-    margin-left: 0;
-    margin-bottom: 10px;
-    margin-top: 5px; }
-  .form-label {
-    font-size: 25px;
-    margin: 0; }
-  button {
-    margin: 10px 0 15px 0; }
-  .footer h5 {
-    font-size: 1.56863rem; }
-  .footer .social-icons {
-    margin-top: 20px; } }
-
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
   .cabecera nav {
     margin-left: 50px; }
   .cabecera a {
@@ -583,7 +506,7 @@ table {
   .footer h5 {
     font-size: 0.93567rem; } }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 480px) and (max-width: 599px) {
   .cabecera a {
     font-size: 0.93567rem; }
   .cabecera nav {
@@ -701,7 +624,7 @@ table {
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .cabecera nav {
-    margin-left: 15px; }
+    margin-left: 0; }
   .cabecera a {
     font-size: 10px; }
   .cabecera li {
@@ -722,12 +645,12 @@ table {
     height: 20px;
     margin-top: 45px; }
   .yo--proyecto-imagen {
-    margin: 65px 0 70px 5px;
+    margin: 35px 0 70px 5px;
     width: 175px;
-    height: 175px; }
+    height: 215px; }
   .yo__parrafo {
-    font-size: 12px;
-    margin: 65px 5px 15px 5px; }
+    font-size: 15px;
+    margin: 35px 0 15px 0; }
   .parrafo {
     font-size: 0.93567rem !important;
     margin-left: 10px;
@@ -742,20 +665,20 @@ table {
       font-size: 1.88235rem; }
     .proyectos .proyecto-imagen {
       width: 95%;
-      height: 75%; }
+      height: 75%;
+      margin-left: 10px; }
     .proyectos .parrafo-proyecto {
-      font-size: 0.88398rem; }
+      font-size: 1.25rem; }
   .subtitulo-proyecto {
     margin: 50px 0px 40px 0px; }
   .parrafo-proyecto {
     font-size: 0.88398rem;
-    margin-top: 30px; }
+    margin-top: 10px; }
   .ver-mas {
     display: flex;
     justify-content: center; }
   .ver-mas a {
-    font-size: 0.88398rem;
-    margin-top: 10px; }
+    font-size: 0.88398rem; }
   .carousel-inner {
     margin-right: 0 !important;
     margin-left: 0; }
@@ -769,13 +692,13 @@ table {
     margin-right: 0 !important; }
   .carousel-control-prev {
     margin-left: 45px;
-    margin-bottom: 65px; }
+    margin-bottom: 200px; }
   .carousel-control-next-icon {
     margin-left: 45px; }
   .carousel-control-next {
-    margin-bottom: 60px; }
+    margin-bottom: 200px; }
   .educacion__subtitulo {
-    font-size: 2.46154rem;
+    font-size: 3.2rem;
     margin-bottom: 50px;
     margin-top: 40px; }
   table {
@@ -792,7 +715,7 @@ table {
     .educacion--tabla li {
       font-size: 0.84211rem; }
   .contacto--subtitulo {
-    font-size: 2.46154rem;
+    font-size: 3.2rem;
     margin-top: 25px;
     margin-bottom: 0; }
   .form-label {
@@ -801,7 +724,7 @@ table {
     font-size: 0.93023rem; }
   .input-group
 > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
-    width: 83%;
+    width: 87%;
     flex: 0 1 auto !important; }
   .btn-secondary {
     font-size: 0.93023rem;
@@ -809,13 +732,14 @@ table {
     margin-top: 35px;
     margin-bottom: 5px; }
   .col-md-3 input {
-    width: 290px;
+    width: 300px;
     font-size: 0.93023rem; }
   .contacto--boton button {
     font-size: 0.93023rem;
     margin-bottom: 15px;
     margin-top: 5px; }
   footer {
+    margin-top: 65px !important;
     padding: 0 !important; }
     footer--contacto {
       margin-bottom: 5px !important;

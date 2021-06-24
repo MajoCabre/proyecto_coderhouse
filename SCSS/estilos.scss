@@ -923,11 +923,13 @@ table {
             margin-top: 45px;
         }
         &--proyecto-imagen {
-            margin: 60px 0 70px 5px;
+            margin: 65px 0 70px 5px;
+            width: 175px;
+            height: 175px;
         }
         &__parrafo {
-            font-size: 10px;
-            margin: 60px 5px 15px 5px;
+            font-size: 12px;
+            margin: 65px 5px 15px 5px;
         }
     }
 
@@ -966,23 +968,25 @@ table {
 
     .ver-mas a {
         font-size: $tamanio-fuente/181;
-        margin-top: 30px;    
+        margin-top: 30px;
     }
 
     .carousel-inner {
         margin-right: 0 !important;
-        margin-left: 45px;
+        margin-left: 0;
     }
     .carousel-item img {
         width: 75% !important;
+        margin-right: 0 !important;
+        margin-left: 40px;
     }
     .carousel-item-next,
     .carousel-item-prev,
     .carousel-item.active {
-        margin-right: 0;
+        margin-right: 0 !important;
     }
     .carousel-control-prev {
-        margin-left: 60px;
+        margin-left: 45px;
         margin-bottom: 65px;
     }
     .carousel-control-next-icon {

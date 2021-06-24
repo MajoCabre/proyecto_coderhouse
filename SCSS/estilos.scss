@@ -97,6 +97,7 @@ body {
     justify-content: center;
     transition: all 2s;
     margin-left: 20px;
+    margin-right: 20px;
 }
 .proyecto-imagen:hover {
     height: 320px;
@@ -893,6 +894,9 @@ table {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
+    body{
+        color: black !important;
+    }
     .cabecera {
         a {
             font-size: 10px;
@@ -924,8 +928,7 @@ table {
             margin-top: 45px;
         }
         &--proyecto-imagen {
-            margin-left: 5px;
-            margin-top: 90px;
+            margin: 90px 0 70px 5px;
         }
         &__parrafo {
             font-size: 10px;
@@ -959,15 +962,16 @@ table {
         }
     }
     .subtitulo-proyecto {
-        margin: 20px 0px 25px 0px;
+        margin: 50px 0px 40px 0px;
     }
     .parrafo-proyecto {
         font-size: $tamanio-fuente/181;
+        margin-top: 30px;
     }
 
     .ver-mas a {
         font-size: $tamanio-fuente/181;
-        margin-top: 0;
+        margin-top: 30px;    
     }
 
     .carousel-inner {

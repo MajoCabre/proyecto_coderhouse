@@ -7,7 +7,7 @@
 
 html {
     height: 100%;
-  }
+}
 
 body {
     background: linear-gradient(#0a1213, #9f5069);
@@ -484,9 +484,6 @@ table {
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
-    // body {
-    //     background-color: rgb(145, 138, 138);
-    // }
     .cabecera {
         nav {
             margin-left: 50px;
@@ -503,6 +500,7 @@ table {
 
     p.parrafo {
         font-size: 120%;
+        margin-right: 10px;
     }
 
     .yo {
@@ -512,9 +510,8 @@ table {
         }
 
         &__parrafo {
-            margin: 0;
+            margin: 0 5px 50px 5px;
             font-size: $tamanio-fuente/171;
-            margin-bottom: 50px;
         }
 
         &--proyecto-imagen {
@@ -525,9 +522,9 @@ table {
         }
     }
 
-    section .video {
-        margin: 0 0 0 100px;
-        @include sizes(400px, 300px);
+    .video--tamanio {
+        @include sizes(550px, 250px);
+        margin-top: 15px;
     }
     .subtitulo {
         margin: 50px;
@@ -537,9 +534,16 @@ table {
 
     .proyectos {
         display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: 2, 1fr;
         align-items: center;
+
+        .proyecto-titulo {
+            font-size: 29px;
+        }
+        .proyecto-imagen {
+            margin: 10px 5px 0 40px;
+            height: 260px;
+            width: 375px;
+        }
     }
 
     .contenido-1 {
@@ -557,11 +561,6 @@ table {
         grid-row: 3;
     }
 
-    .proyecto-imagen {
-        margin-top: 10px;
-        margin-left: 10px;
-    }
-
     .carousel-control-prev {
         margin: 0 100px 220px 200px;
     }
@@ -574,9 +573,8 @@ table {
         display: grid;
         font-size: $tamanio-fuente/100;
         grid-column: 2;
-        margin-left: 5px;
-        margin-top: 10px;
         align-items: flex-start;
+        margin: 10px 25px 0 40px;
     }
     .ver-mas {
         display: grid;
@@ -587,9 +585,14 @@ table {
         font-size: 100%;
         a {
             font-size: $tamanio-fuente/100;
+            margin: 10px 0 20px 40px;
         }
     }
 
+    table{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
     .educacion__subtitulo {
         margin-top: 50px;
     }
@@ -659,25 +662,26 @@ table {
         margin-top: 50px;
     }
     .parrafo {
-        font-size: $tamanio-fuente/171;
+        font-size: 25px;
         margin: 15px 10px 10px 10px;
     }
     .yo {
         &__subtitulo {
-            font-size: 45px;
+            font-size: 65px;
             margin-top: 25px;
             margin-bottom: 0;
         }
 
         &__parrafo {
-            font-size: 15px;
-            margin: 0 15px 50px 0;
+            font-size: 18px;
+            margin-right: 5px;
+            margin-left: 0;
         }
         &--proyecto-imagen {
-            max-height: 205px;
-            max-width: 220px;
+            height: 230px;
             transition: none;
-            margin-top: 0;
+            margin-top: 25px;
+            margin-left: 5px;
         }
     }
 
@@ -697,11 +701,12 @@ table {
         margin-top: 40px;
 
         .proyecto-imagen {
-            @include sizes(100%, 100%);
+            @include sizes(95%, 100%);
+            margin-left: 10px;
         }
 
         .parrafo-proyecto {
-            font-size: 20px;
+            font-size: 25px;
             margin: 20px 0 0 15px;
         }
     }
@@ -722,13 +727,13 @@ table {
     }
     .carousel-control-prev {
         margin-left: 45px;
-        margin-bottom: 65px;
+        margin-bottom: 200px;
     }
     .carousel-control-next-icon {
         margin-left: 45px;
     }
     .carousel-control-next {
-        margin-bottom: 60px;
+        margin-bottom: 200px;
     }
     .col-md-4 input {
         font-size: $tamanio-fuente/164;
@@ -757,7 +762,7 @@ table {
 
         a {
             margin-top: 20px;
-            font-size: 100%;
+            font-size: 25px;
         }
     }
 
@@ -766,7 +771,7 @@ table {
     }
 
     .educacion__subtitulo {
-        font-size: 45px;
+        font-size: 65px;
         margin-top: 25px;
         margin-bottom: 0;
     }
@@ -780,13 +785,13 @@ table {
         }
 
         th {
-            font-size: $tamanio-fuente/120;
+            font-size: 30px;
         }
         td {
-            font-size: $tamanio-fuente/145;
+            font-size: 25px;
         }
         li {
-            font-size: $tamanio-fuente/145;
+            font-size: 25px;
         }
     }
 

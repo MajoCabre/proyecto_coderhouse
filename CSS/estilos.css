@@ -424,31 +424,35 @@ table {
   #titulo-principal {
     font-size: 350%; }
   p.parrafo {
-    font-size: 120%; }
+    font-size: 120%;
+    margin-right: 10px; }
   .yo__subtitulo {
     font-size: 40px;
     margin: 30px 0 0 0; }
   .yo__parrafo {
-    margin: 0;
-    font-size: 0.93567rem;
-    margin-bottom: 50px; }
+    margin: 0 5px 50px 5px;
+    font-size: 0.93567rem; }
   .yo--proyecto-imagen {
     max-height: 200px;
     max-width: 250px;
     transition: none;
     margin-top: 0; }
-  section .video {
-    margin: 0 0 0 100px;
-    width: 400px;
-    height: 300px; }
+  .video--tamanio {
+    width: 550px;
+    height: 250px;
+    margin-top: 15px; }
   .subtitulo {
     margin: 50px; }
   /*Aplicando Grids*/
   .proyectos {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: 2, 1fr;
     align-items: center; }
+    .proyectos .proyecto-titulo {
+      font-size: 29px; }
+    .proyectos .proyecto-imagen {
+      margin: 10px 5px 0 40px;
+      height: 260px;
+      width: 375px; }
   .contenido-1 {
     display: grid;
     grid-template-rows: 1; }
@@ -458,9 +462,6 @@ table {
   .contenido-3 {
     display: grid;
     grid-row: 3; }
-  .proyecto-imagen {
-    margin-top: 10px;
-    margin-left: 10px; }
   .carousel-control-prev {
     margin: 0 100px 220px 200px; }
   .carousel-control-next {
@@ -469,9 +470,8 @@ table {
     display: grid;
     font-size: 1.6rem;
     grid-column: 2;
-    margin-left: 5px;
-    margin-top: 10px;
-    align-items: flex-start; }
+    align-items: flex-start;
+    margin: 10px 25px 0 40px; }
   .ver-mas {
     display: grid;
     grid-column: 2;
@@ -480,7 +480,11 @@ table {
     margin: 0px 0px 10px 5px;
     font-size: 100%; }
     .ver-mas a {
-      font-size: 1.6rem; }
+      font-size: 1.6rem;
+      margin: 10px 0 20px 40px; }
+  table {
+    margin-left: 5px;
+    margin-right: 5px; }
   .educacion__subtitulo {
     margin-top: 50px; }
   .educacion--tabla {
@@ -520,20 +524,21 @@ table {
   #titulo-principal {
     margin-top: 50px; }
   .parrafo {
-    font-size: 0.93567rem;
+    font-size: 25px;
     margin: 15px 10px 10px 10px; }
   .yo__subtitulo {
-    font-size: 45px;
+    font-size: 65px;
     margin-top: 25px;
     margin-bottom: 0; }
   .yo__parrafo {
-    font-size: 15px;
-    margin: 0 15px 50px 0; }
+    font-size: 18px;
+    margin-right: 5px;
+    margin-left: 0; }
   .yo--proyecto-imagen {
-    max-height: 205px;
-    max-width: 220px;
+    height: 230px;
     transition: none;
-    margin-top: 0; }
+    margin-top: 25px;
+    margin-left: 5px; }
   section .video {
     margin: 0px 0px 0px 100px;
     width: 300px;
@@ -546,10 +551,11 @@ table {
     align-items: center;
     margin-top: 40px; }
     .proyectos .proyecto-imagen {
-      width: 100%;
-      height: 100%; }
+      width: 95%;
+      height: 100%;
+      margin-left: 10px; }
     .proyectos .parrafo-proyecto {
-      font-size: 20px;
+      font-size: 25px;
       margin: 20px 0 0 15px; }
   .carousel-inner {
     margin-right: 0 !important;
@@ -564,11 +570,11 @@ table {
     margin-right: 0 !important; }
   .carousel-control-prev {
     margin-left: 45px;
-    margin-bottom: 65px; }
+    margin-bottom: 200px; }
   .carousel-control-next-icon {
     margin-left: 45px; }
   .carousel-control-next {
-    margin-bottom: 60px; }
+    margin-bottom: 200px; }
   .col-md-4 input {
     font-size: 0.97561rem; }
   .col-md-3 input {
@@ -588,11 +594,11 @@ table {
     align-items: center; }
     .ver-mas a {
       margin-top: 20px;
-      font-size: 100%; }
+      font-size: 25px; }
   table {
     border-spacing: 15px; }
   .educacion__subtitulo {
-    font-size: 45px;
+    font-size: 65px;
     margin-top: 25px;
     margin-bottom: 0; }
   .educacion--tabla {
@@ -601,11 +607,11 @@ table {
     .educacion--tabla ul {
       margin: 0; }
     .educacion--tabla th {
-      font-size: 1.33333rem; }
+      font-size: 30px; }
     .educacion--tabla td {
-      font-size: 1.10345rem; }
+      font-size: 25px; }
     .educacion--tabla li {
-      font-size: 1.10345rem; }
+      font-size: 25px; }
   .contacto--subtitulo {
     font-size: 45px;
     margin-top: 25px;

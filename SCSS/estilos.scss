@@ -763,7 +763,7 @@ table {
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 480px) {
     .cabecera {
         a {
             font-size: $tamanio-fuente/171;
@@ -771,14 +771,20 @@ table {
         nav {
             margin-left: 0px;
         }
+        li {
+            margin-right: 5px;
+        }
     }
-
+    .video--tamanio {
+        @include sizes(400px, 200px);
+        margin-top: 15px;
+    }
     #titulo-principal {
         margin-top: 50px;
     }
     .parrafo {
         font-size: $tamanio-fuente/171;
-        margin: 15px 0 10px 0;
+        margin: 15px 10px 10px 10px;
     }
     .yo {
         &__subtitulo {
@@ -788,11 +794,11 @@ table {
         }
 
         &__parrafo {
-            font-size: 12px;
+            font-size: 15px;
             margin: 0 15px 50px 0;
         }
         &--proyecto-imagen {
-            max-height: 170px;
+            max-height: 205px;
             max-width: 220px;
             transition: none;
             margin-top: 0;
@@ -812,27 +818,59 @@ table {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 40px;
 
         .proyecto-imagen {
             @include sizes(100%, 100%);
         }
 
         .parrafo-proyecto {
-            font-size: 18px;
-            margin-left: 15px;
+            font-size: 20px;
+            margin: 20px 0 0 15px;
         }
     }
 
+    .carousel-inner {
+        margin-right: 0 !important;
+        margin-left: 0;
+    }
+    .carousel-item img {
+        width: 75% !important;
+        margin-right: 0 !important;
+        margin-left: 40px;
+    }
+    .carousel-item-next,
+    .carousel-item-prev,
+    .carousel-item.active {
+        margin-right: 0 !important;
+    }
     .carousel-control-prev {
-        margin-left: 100px;
-        margin-top: 0;
-        margin-bottom: 200px;
+        margin-left: 45px;
+        margin-bottom: 65px;
+    }
+    .carousel-control-next-icon {
+        margin-left: 45px;
+    }
+    .carousel-control-next {
+        margin-bottom: 60px;
+    }
+    .col-md-4 input {
+        font-size: $tamanio-fuente/164;
+    }
+    .col-md-3 input {
+        font-size: $tamanio-fuente/164;
+        width: 430px;
+    }
+    .btn {
+        font-size: $tamanio-fuente/128;
+    }
+    .btn.btn-secondary {
+        width: 430px;
+    }
 
-        .carousel-control-next {
-            margin-right: 0;
-            margin-top: 0;
-            margin-bottom: 200px;
-        }
+    .contacto--boton button {
+        font-size: $tamanio-fuente/128;
+        margin-top: 0;
     }
 
     .ver-mas {
@@ -842,9 +880,13 @@ table {
         align-items: center;
 
         a {
-            font-size: 100%;
             margin-top: 20px;
+            font-size: 100%;
         }
+    }
+
+    table {
+        border-spacing: 15px;
     }
 
     .educacion__subtitulo {
@@ -856,6 +898,10 @@ table {
     .educacion--tabla {
         margin-bottom: 10px;
         margin-top: 20px;
+
+        ul {
+            margin: 0;
+        }
 
         th {
             font-size: $tamanio-fuente/120;
@@ -884,13 +930,14 @@ table {
         margin-bottom: 15px;
     }
     .footer {
-        margin-top: 0;
+        margin-top: 50px;
 
         &--contacto {
             font-size: $tamanio-fuente/171;
         }
-        &--social {
+        .social-icons {
             font-size: $tamanio-fuente/171;
+            margin-top: 10px;
         }
     }
 }

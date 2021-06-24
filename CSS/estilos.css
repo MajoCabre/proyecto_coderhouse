@@ -584,25 +584,31 @@ table {
     .footer h5 {
       font-size: 0.93567rem; } }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 480px) {
   .cabecera a {
     font-size: 0.93567rem; }
   .cabecera nav {
     margin-left: 0px; }
+  .cabecera li {
+    margin-right: 5px; }
+  .video--tamanio {
+    width: 400px;
+    height: 200px;
+    margin-top: 15px; }
   #titulo-principal {
     margin-top: 50px; }
   .parrafo {
     font-size: 0.93567rem;
-    margin: 15px 0 10px 0; }
+    margin: 15px 10px 10px 10px; }
   .yo__subtitulo {
     font-size: 45px;
     margin-top: 25px;
     margin-bottom: 0; }
   .yo__parrafo {
-    font-size: 12px;
+    font-size: 15px;
     margin: 0 15px 50px 0; }
   .yo--proyecto-imagen {
-    max-height: 170px;
+    max-height: 205px;
     max-width: 220px;
     transition: none;
     margin-top: 0; }
@@ -615,29 +621,54 @@ table {
   .proyectos {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    margin-top: 40px; }
     .proyectos .proyecto-imagen {
       width: 100%;
       height: 100%; }
     .proyectos .parrafo-proyecto {
-      font-size: 18px;
-      margin-left: 15px; }
+      font-size: 20px;
+      margin: 20px 0 0 15px; }
+  .carousel-inner {
+    margin-right: 0 !important;
+    margin-left: 0; }
+  .carousel-item img {
+    width: 75% !important;
+    margin-right: 0 !important;
+    margin-left: 40px; }
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active {
+    margin-right: 0 !important; }
   .carousel-control-prev {
-    margin-left: 100px;
-    margin-top: 0;
-    margin-bottom: 200px; }
-    .carousel-control-prev .carousel-control-next {
-      margin-right: 0;
-      margin-top: 0;
-      margin-bottom: 200px; }
+    margin-left: 45px;
+    margin-bottom: 65px; }
+  .carousel-control-next-icon {
+    margin-left: 45px; }
+  .carousel-control-next {
+    margin-bottom: 60px; }
+  .col-md-4 input {
+    font-size: 0.97561rem; }
+  .col-md-3 input {
+    font-size: 0.97561rem;
+    width: 430px; }
+  .btn {
+    font-size: 1.25rem; }
+  .btn.btn-secondary {
+    width: 430px; }
+  .contacto--boton button {
+    font-size: 1.25rem;
+    margin-top: 0; }
   .ver-mas {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center; }
     .ver-mas a {
-      font-size: 100%;
-      margin-top: 20px; }
+      margin-top: 20px;
+      font-size: 100%; }
+  table {
+    border-spacing: 15px; }
   .educacion__subtitulo {
     font-size: 45px;
     margin-top: 25px;
@@ -645,6 +676,8 @@ table {
   .educacion--tabla {
     margin-bottom: 10px;
     margin-top: 20px; }
+    .educacion--tabla ul {
+      margin: 0; }
     .educacion--tabla th {
       font-size: 1.33333rem; }
     .educacion--tabla td {
@@ -662,11 +695,12 @@ table {
   button {
     margin-bottom: 15px; }
   .footer {
-    margin-top: 0; }
+    margin-top: 50px; }
     .footer--contacto {
       font-size: 0.93567rem; }
-    .footer--social {
-      font-size: 0.93567rem; } }
+    .footer .social-icons {
+      font-size: 0.93567rem;
+      margin-top: 10px; } }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .cabecera a {

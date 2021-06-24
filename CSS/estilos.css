@@ -110,10 +110,12 @@ body {
   text-align: center;
   margin: 50px 0px 50px 0px; }
 
-section .video {
-  width: 650px;
-  height: 550px;
-  margin-left: 400px; }
+.video {
+  display: flex;
+  justify-content: center; }
+  .video--tamanio {
+    width: 650px;
+    height: 550px; }
 
 .subtitulo-proyecto {
   font-family: "Open Sans", sans-serif;
@@ -667,16 +669,13 @@ table {
       font-size: 0.93567rem; } }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
-  .color-main {
-    background-color: black; }
   .cabecera a {
     font-size: 10px; }
   .cabecera li {
     margin: 0 2px 0 2px; }
   .cabecera ul {
     padding-left: 5px; }
-  .video {
-    margin-left: 10px !important;
+  .video--tamanio {
     width: 300px;
     height: 200px; }
   #titulo-principal {

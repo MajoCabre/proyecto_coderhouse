@@ -5,11 +5,17 @@
     height: $height;
 }
 
+html {
+    height: 100%;
+  }
+
 body {
     background: linear-gradient(#0a1213, #9f5069);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0px;
     padding: 0px;
+    min-height: 100%;
 }
 
 .cabecera {
@@ -596,7 +602,7 @@ table {
     }
 
     .footer {
-        margin-top: 160px;
+        // margin-top: 160px;
 
         h5 {
             font-size: $tamanio-fuente/102;
@@ -608,9 +614,9 @@ table {
 }
 
 @media only screen and (max-width: 600px) {
-    body {
-        background-color: rgb(145, 138, 138);
-    }
+    // body {
+    //     background-color: rgb(145, 138, 138);
+    // }
     .cabecera {
         nav {
             margin-left: 50px;
@@ -755,7 +761,7 @@ table {
     }
 
     .footer {
-        margin-top: 50px;
+        // margin-top: 50px;
 
         h5 {
             font-size: $tamanio-fuente/171;
@@ -930,7 +936,7 @@ table {
         margin-bottom: 15px;
     }
     .footer {
-        margin-top: 50px;
+        // margin-top: 50px;
 
         &--contacto {
             font-size: $tamanio-fuente/171;
@@ -944,6 +950,9 @@ table {
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
     .cabecera {
+        nav {
+            margin-left: 15px;
+        }
         a {
             font-size: 10px;
         }
@@ -960,6 +969,7 @@ table {
 
     #titulo-principal {
         font-size: $tamanio-fuente/50;
+        margin-top: 30px;
     }
 
     .subtitulo {
@@ -1016,9 +1026,14 @@ table {
         margin-top: 30px;
     }
 
+    .ver-mas {
+        display: flex;
+        justify-content: center;
+    }
+
     .ver-mas a {
         font-size: $tamanio-fuente/181;
-        margin-top: 30px;
+        margin-top: 10px;
     }
 
     .carousel-inner {
@@ -1048,6 +1063,8 @@ table {
 
     .educacion__subtitulo {
         font-size: $tamanio-fuente/65;
+        margin-bottom: 50px;
+        margin-top: 40px;
     }
     table {
         border-spacing: 15px;
@@ -1105,7 +1122,7 @@ table {
         margin-top: 5px;
     }
     footer {
-        margin-top: 75px !important;
+        // margin-top: 75px !important;
         padding: 0 !important;
 
         &--contacto {

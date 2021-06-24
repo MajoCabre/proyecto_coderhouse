@@ -54,7 +54,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: 1.6rem;
-    margin: 10px 30px 30px 30px; }
+    margin: 20px 30px 30px 30px; }
   .yo--proyecto-imagen {
     grid-column: 1;
     grid-row: 2;
@@ -151,6 +151,9 @@ section .video {
 .carousel-control-next {
   margin-right: 0; }
 
+.carousel-control-next-icon {
+  margin-bottom: 10px; }
+
 .carousel-item img {
   width: 50% !important;
   height: 30% !important;
@@ -192,7 +195,7 @@ button:hover {
 
 table {
   border-collapse: separate;
-  border-spacing: 10px; }
+  border-spacing: 30px; }
 
 .educacion--tabla {
   display: flex;
@@ -663,9 +666,15 @@ table {
     .footer--social {
       font-size: 0.93567rem; } }
 
-@media only screen and (width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .cabecera a {
+    font-size: 10px; }
+  .cabecera li {
+    margin: 0 2px 0 5px; }
+  .cabecera ul {
+    padding-left: 5px; }
   .video {
-    margin-left: 15px !important;
+    margin-left: 30px !important;
     width: 300px;
     height: 200px; }
   #titulo-principal {
@@ -674,16 +683,18 @@ table {
     margin-bottom: 0;
     font-size: 2.46154rem; }
   .yo__subtitulo {
-    font-size: 3.2rem;
+    font-size: 45px;
     height: 0; }
   .yo--proyecto-imagen {
     margin-left: 5px;
-    margin-top: 90px; }
+    margin-top: 80px; }
   .yo__parrafo {
     font-size: 10px;
-    margin: 90px 5px 5px 5px; }
+    margin: 80px 5px 15px 5px; }
   .parrafo {
-    font-size: 0.93567rem !important; }
+    font-size: 0.93567rem !important;
+    margin-left: 10px;
+    margin-right: 10px; }
   .proyectos {
     display: flex;
     flex-direction: column;
@@ -697,13 +708,33 @@ table {
       height: 75%; }
     .proyectos .parrafo-proyecto {
       font-size: 0.88398rem; }
+  .subtitulo-proyecto {
+    margin: 20px 0px 25px 0px; }
   .parrafo-proyecto {
     font-size: 0.88398rem; }
   .ver-mas a {
     font-size: 0.88398rem;
-    margin-top: 5px; }
+    margin-top: 0; }
+  .carousel-inner {
+    margin-right: 0 !important;
+    margin-left: 45px; }
+  .carousel-item img {
+    width: 75% !important; }
+  .carousel-item-next,
+  .carousel-item-prev,
+  .carousel-item.active {
+    margin-right: 0; }
+  .carousel-control-prev {
+    margin-left: 60px;
+    margin-bottom: 20px; }
+  .carousel-control-next-icon {
+    margin-left: 45px; }
+  .carousel-control-next {
+    margin-bottom: 15px; }
   .educacion__subtitulo {
     font-size: 2.46154rem; }
+  table {
+    border-spacing: 15px; }
   .educacion--tabla {
     margin-bottom: 10px;
     margin-top: 20px; }
@@ -725,18 +756,22 @@ table {
     font-size: 0.93023rem; }
   .input-group
 > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
-    width: 82%;
+    width: 83%;
     flex: 0 1 auto !important; }
   .btn-secondary {
-    font-size: 0.93023rem; }
+    font-size: 0.93023rem;
+    width: 305px;
+    margin-top: 35px;
+    margin-bottom: 5px; }
   .col-md-3 input {
     width: 290px;
     font-size: 0.93023rem; }
   .contacto--boton button {
-    margin-bottom: 5px;
-    font-size: 0.93023rem; }
+    font-size: 0.93023rem;
+    margin-bottom: 15px;
+    margin-top: 5px; }
   footer {
-    margin-top: 90px !important;
+    margin-top: 88px !important;
     padding: 0 !important; }
     footer--contacto {
       margin-bottom: 5px !important;

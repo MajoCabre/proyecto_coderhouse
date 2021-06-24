@@ -920,15 +920,16 @@ table {
     .yo {
         &__subtitulo {
             font-size: 45px;
-            height: 0;
+            height: 20px;
+            margin-top: 45px;
         }
         &--proyecto-imagen {
             margin-left: 5px;
-            margin-top: 80px;
+            margin-top: 90px;
         }
         &__parrafo {
             font-size: 10px;
-            margin: 80px 5px 15px 5px;
+            margin: 90px 5px 15px 5px;
         }
     }
 

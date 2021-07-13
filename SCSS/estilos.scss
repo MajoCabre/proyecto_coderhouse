@@ -68,7 +68,7 @@ body {
         font-weight: $estilo-fuente;
         color: $color-titulo;
         text-align: center;
-        margin: 50px 0px 50px 0px;
+        margin: 0px;
     }
     &__parrafo {
         grid-column: 2;
@@ -560,7 +560,6 @@ table {
     .yo {
         &__subtitulo {
             font-size: 45px;
-            height: 20px;
             margin-top: 45px;
         }
         &--proyecto-imagen {

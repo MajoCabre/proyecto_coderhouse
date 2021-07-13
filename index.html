@@ -40,107 +40,52 @@
 
         <section class="video">
             <video class="video--tamanio" autoplay muted>
-                <source  src="./media/video.mp4" type="video/mp4" alt="video-reposteria">
-              </video>
+                <source src="./media/video.mp4" type="video/mp4" alt="video-reposteria">
+            </video>
         </section>
 
         <section>
-            <h2 class="subtitulo">¿Quién soy?</h2>
-                        <p class="parrafo">Hola! mi nombre es Maria Jose Cabre, tengo 24 años y estoy estudiando la carrera de Desarrollo Frontend en coderHouse.</p>
-            <p class="parrafo">Mi meta en esta carrera es seguir aprendiendo a fondo y especializarme en esta rama para así entrar en el área tecnológica y desarrollarme en el campo laboral. Tengo habilidades en HTML, CSS, Bootstrap, SASS, entre otras cosas aprendidas en este curso y en otros en los que he estudiado.</p>
+            <h2 class="subtitulo"> <a href="./yo.html">¿Quién soy?</a></h2>
+            <p class="parrafo">Hola! mi nombre es Maria Jose Cabre, tengo 24 años y estoy estudiando la carrera de
+                Desarrollo Frontend en CoderHouse.</p>
         </section>
 
         <section>
-            <h2 class="subtitulo">Proyectos</h2>
+            <h2 class="subtitulo"> <a href="./proyectos.html">Proyectos</a></h2>
 
             <section class="proyectos">
                 <div class="contenido-1">
-                    <h3 class="proyecto-titulo">Proyecto 1</h3>
                     <img class="proyecto-imagen" src="./media/raspberries-2023404_1920.jpg" alt="foto-proyecto1">
-                      <p class="parrafo-proyecto">Aquí se trabaja con HTML, CSS y se aplican box modeling.</p>
-                       </p>
                     <h6 class="ver-mas"><a href="./proyectos.html">Ver más</a></h6>
                 </div>
 
                 <div class="contenido-2">
-                    <h3 class="proyecto-titulo">Proyecto 2</h3>
-                    <img class="proyecto-imagen" src="./media/breakfast-1209260_1920.jpg" alt="foto-proyecto2">
-                    <p class="parrafo-proyecto">Este es un proyecto armado con bootstrap y tecnológica de BEM.</p>
+                    <img class="proyecto-imagen" src="./media/bakery-1868396_1920.jpg" alt="foto-proyecto2">
                     <h6 class="ver-mas"><a href="./proyectos.html">Ver más</a></h6>
                 </div>
 
                 <div class="contenido-3">
-                    <h3 class="proyecto-titulo">Proyecto 3</h3>
-                    <img class="proyecto-imagen" src="./media/cake-1839134_1920.jpg" alt="foto-proyecto3">
-                    <p class="parrafo-proyecto">Se realizó esté proyecto como prueba con SASS.</p>
+                    <img class="proyecto-imagen" src="./media/cookie-756601_1920.jpg" alt="foto-proyecto3">
                     <h6 class="ver-mas"><a href="./proyectos.html">Ver más</a></h6>
                 </div>
             </section>
         </section>
 
-        <section>
-            <div class="educacion">
-                <h2 class="educacion__subtitulo">Educación</h2>
-            </div>
-
-            <div class="educacion--tabla">
-                <table CELLSPACING="15">
-                    <tr>
-                        <th>Institución</th>
-                        <th>Tiempo</th>
-                        <th>Formación</th>
-                    </tr>
-
-                    <ul>
-                        <tr>
-                            <td>
-                                <li>Colégio Teresiano</li>
-                            <td> 2000 - 2015</td>
-                            <td>Primaria y Secundaria</td>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <li>Platzi</li>
-                            <td>2019 - 2021</td>
-                            <td>
-                                <ul>
-                                    <li>Curso de Desarrollo Web Online</li>
-                                    <li>Curso de Frontend Developer</li>
-                                    <li>Curso Básico de JavaScript</li>
-                                </ul>
-                            </td>
-                            </td>
-                        </tr>
-                        <tr>
-
-                            <td>
-                                <li>Udemy</li>
-                            <td>2020 - 2020</td>
-                            <td>Curso de Programación para principiantes</td>
-                            </td>
-                        </tr>
-                    </ul>
-                </table>
-            </div>
-        </section>
-
         <section class="contacto">
-            <h2 class="contacto--subtitulo">Contacto</h2>
+            <h2 class="contacto--subtitulo"><a href="./contacto.html">Contacto</a></h2>
 
             <!-- Aplicando Bootstrap -->
 
-            <form class="row g-3 contacto-form">
-                <div class="col-md-4">
+            <form class="row g-3 contenedor-grande">
+                <div class="custom-input contenedor">
                     <label for="validationDefault01" class="form-label">Nombre:</label>
                     <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
                 </div>
-                <div class="col-md-4">
+                <div class="custom-input contenedor">
                     <label for="validationDefault02" class="form-label">Apellido:</label>
                     <input type="text" class="form-control" id="validationDefault02" value="Otto" required>
                 </div>
-                <div class="col-md-4">
+                <div class="custom-input contenedor">
                     <label for="validationDefaultUsername" class="form-label">Mail:</label>
                     <div class="input-group">
                         <span class="input-group-text" id="inputGroupPrepend2">@</span>
@@ -148,33 +93,10 @@
                             aria-describedby="inputGroupPrepend2" required>
                     </div>
                 </div>
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        País
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Argentina</a></li>
-                        <li><a class="dropdown-item" href="#">Colombia</a></li>
-                        <li><a class="dropdown-item" href="#">Venezuela</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-3">
-                    <label for="validationDefault05" class="form-label">Escríbenos tu consulta..</label>
-                    <input type="text" class="form-control" id="validationDefault05" placeholder="Consulta..." required>
-                </div>
-
-                <div class="col-12">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                        <label class="form-check-label" for="invalidCheck2">
-                            Quiero que me contacten
-                        </label>
-                    </div>
+                <div class="titulo_contacto">
+                    <h3>Si tienes alguna consulta puedes hacerla <a href="./contacto.html">aquí</a></h3>
                 </div>
                 <div class="contacto--boton">
-                    <button type="reset">Borrar mis datos</button>
                     <button type="submit">Enviar</button>
                 </div>
 
